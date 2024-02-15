@@ -1,0 +1,17 @@
+   p {
+                font-size: 22pt;
+                color: green;
+            }
+            
+            #gruby_racewicz {
+                font-size: 17pt;
+                color: yellow;
+                font-weight: bold;
+            }
+            
+            #dlawszystkich_racewicz {
+                font-size: 10pt;
+                color: blue;
+                font-family: 'Arial', sans-serif;
+            }
+        
