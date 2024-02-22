@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <ol>
+            <h1><li>
+                Jakie standardowo dostępne są czcionki w systemie Windows?</h1>     <!-- (trzy, użyj wyliczenia z kwadratem) -->
+                <ul type="square">
+                    <li>Arial</li>
+                    <li>Times New Roman</li>
+                    <li>Courier New</li>
+                </ul>
+            </li>
+            <h1><li>
+                Jakich czcionek dodatkowo dostarcza Internet Explorerem?</h1>                 <!-- (cztery, użyj wyliczenia z okręgiem nie kołem)-->
+                <ul type="circle">
+                    <li>Verdana</li>
+                    <li>Tahoma</li>
+                    <li>Trebuchet MS</li>
+                    <li>Georgia</li>
+                </ul>
+            </li>
+            <h1><li>
+                Wymień rodziny ogólne</h1>                       <!-- (pięć, użyj wyliczenia z kołem, podkreślen33ie, przykłady) -->
+                <ul type="disc">
+                    <li>serif</li>
+                    <li>sans-serif</li>
+                    <li>monospace</li>
+                    <li>cursive</li>
+                    <li>fantasy</li>
+                </ul>
+            </li>   
+            <h1><li>
+                Kiedy stosujemy rodziny czcionek, w jaki sposób wpisujemy (deklarujemy) rodziny czcionek?</h1>
+                <p>Oprócz podania rodzaju czcionki wprost, możliwe jest także wpisanie rodziny czcionek</p>
+                <table style="border-width:2px; border-style:solid; border-color:black; border-collapse:collapse;"><td>body { font-family: Arial, Helvetica, Verdana, sans-serif }</td></table>
+                <p>Taki sposób jest mocno zalecany, gdyż wtedy nawet jeśli użytkownik nie będzie posiadał
+                    żadnej z podanych czcionek, strona zostanie wyświetlona przy użyciu czcionki podobnej do
+                    zdefiniowanych, a nie domyślnej, która może zupełnie nie pasować do typografii naszej
+                    strony. Dlatego zawsze staraj się na końcu wpisywać rodzinę ogólną, do której należą
+                    czcionki, podane w pierwszej kolejności (najczęściej wykorzystuje się rodziny: serif lub sans-
+                    serif).
+                </p>
+            </li>
+            <h1><li>
+                Wyrównanie tekstu</h1> <!--(cztery, wyliczenie)-->
+                <p>Składnia reguły:</p>
+                <table style="border:2px solid black;"><td>selektor {text-align: wyrównanie;}</td></table>
+                <p>Rodzaje wyrównania tekstu:</p>
+                <ol>
+                    <li>"left" - wyrównanie tekstu do lewego marginesu (domyślnie)</li>
+                    <li>"right" - wyrównanie tekstu do prawego marginesu</li>
+                    <li>"center" - wyśrodkowanie</li>
+                    <li>"justify" - wyrównanie do obu marginesów jednocześnie (justowanie)</li>
+                </ol>
+            </li>
+            <h1><li>
+                Kolor tekstu</h1> <!--(składnia i opis)-->
+                <p>Składnia reguły:</p>
+                <table style="border:2px solid black"><td>selektor {color: kolor;}</td></table>
+                <p>Wyraz selektor ma zastosowanie do wszystkich elementów.
+                    Natomiast jako kolor należy podać definicję koloru.
+                    Dzięki temu poleceniu można ustalić dowolny kolor tekstu</p>
+            </li>
+            <h1><li>
+                Dekoracja tekstu</h1> <!--(składnia, opis, odpowiednie wcięcia, podkreślenia numerowania a) b)…)-->
+                <p>Składnia reguły:</p>
+                <table style="border:2px solid black;"><td>selektor {text-decoration: dekoracja;}</td></table>
+                <p>Tekst można „udekorować” w sposób następujący:</p>
+                <ol type="a">
+                    <li>Podkreślić - (underline)</li>
+                    <li>Przekreślić - (line-through)</li>
+                    <li>Nadkreślić - (overline)</li>
+                    <li>Można dodać migotanie tekstu (tylko Netspace/Mozilla/Opera) – (blink)</li>
+                </ol>
+            </li>
+            <h1><li>
+                Warianty czcionek</h1>
+                <ul>
+                    <li>normal - czcionka normalna (podstawowa)</li>
+                    <li>small-caps - kapitaliki</li>
+                    <li>normal - czcionka normalna (podstawowa)</li>
+                    <li>bold - czcionka pogrubiona</li>
+                </ul>
+            </li>
+            <h1><li>
+                Pogrubienie czcionek</h1>
+                <p>Składnia:</p>
+                <table style="border:2px solid black"><td>p {font-weight: bold;}</td></table>
+            </li>
+            <h1><li>
+                Rozmiar czcionek</h1>
+                <p>Składnia:</p>
+                <table style="border:2px solid black"><td>p {font-size: rozmiar}</td></table>
+                <p>Rozmiar: należy podać konkretną wielkość, używając jednostek miary:</p>
+                <ul>
+                    <li>piksele - px</li>
+                    <li>punkty edytorskie - pt</li>
+                    <li>wysokość litery "x" - ex</li>
+                    <li>wysokość aktualnej czcionki - em</li>
+                    <li>centymetry lub milimetry - cm, mm</li>
+                    <li>części dziesiętne centymetra pisane z kropką np.: 0.5cm</li>
+                    <li>cale - in (1in=2.54cm)</li>
+                    <li>procent wielkości nadrzędnej - %</li>
+                    <li>"normal" - przywraca wartość domyślną</li>
+                </ul>
+            </li>
+            <h1><li>
+                Transformacja tekstu</h1> <!--(składnia, opis, podkreślenia)-->
+                <p>Składnia reguły:</p>
+                <table style="border:2px solid black"><td>selektor {text-transform: transformacja;}</td></table>
+                <p>Wyraz selektor ma zastosowanie do wszystkich elementów.
+                    transformacja:</p>
+                <ul>
+                    <li>"none" - bez zmian</li>
+                    <li>"capitalize" - zamiana pierwszych liter wszystkich wyrazów na wielkie</li>
+                    <li>"uppercase" - zamiana wszystkich liter na wielkie</li>
+                    <li>"lowercase" - zamiana wszystkich liter na małe</li>
+                </ul>
+            </li>
+            <h1><li>
+                Wcięcia tekstu</h1>      <!--(składnia, jednostki miar)-->
+                <p>Składnia reguły:</p>
+                <table style="border:2px solid black;"><td>selektor {text-indent: wcięcie;}</td></table>
+                <p>Wyraz selektor ma zastosowanie do elementów blokowych.<br>
+                Wcięcie - należy podać konkretną wielkość, używając jednostek miary:</p>
+                <ul>
+                    <li>piksele - px</li>
+                    <li>punkty edytorskie - pt</li>
+                    <li>wysokość litery "x" - ex</li>
+                    <li>wysokość aktualnej czcionki - em</li>
+                    <li>centymetry lub milimetry - cm, mm</li>
+                    <li>części dziesiętne centymetra pisane z kropką np.: 0.5cm</li>
+                    <li>cale - in (1in=2.54cm)</li>
+                    <li>procent wielkości nadrzędnej - %</li>
+                </ul>
+            </li>
+            <h1><li>
+                Odstęp miedzy wierszami</h1>
+                <p>Składnia reguły:</p>
+                <table style="border:2px solid black;"><td>selektor {line-height: odstęp;}</td></table>
+                <p>Wyraz selektor ma zastosowanie do wszystkich elementów. <br>
+                    Odstęp: należy podać konkretną wielkość, używając jednostek miary:</p>
+                <ul>
+                    <li>piksele - px</li>
+                    <li>punkty edytorskie - pt</li>
+                    <li>wysokość litery "x" - ex</li>
+                    <li>wysokość aktualnej czcionki - em</li>
+                    <li>centymetry lub milimetry - cm, mm</li>
+                    <li>części dziesiętne centymetra pisane z kropką np.: 0.5cm</li>
+                    <li>cale - in (1in=2.54cm)</li>
+                    <li>procent wielkości nadrzędnej - %</li>
+                    <li>"normal" - przywraca wartość domyślną</li>
+                </ul>
+            </li>
+            <h1><li>
+                Odstęp między wyrazami</h1>
+                <p>Składnia reguły:</p>
+                <table style="border:2px solid black;"><td>selektor {word-spacing: odstęp;}</td></table>
+                <p>Wyraz selektor ma zastosowanie do wszystkich elementów. <br>
+                    Odstęp: należy podać konkretną wielkość, używając jednostek miary:</p>
+                <ul>
+                    <li>piksele - px</li>
+                    <li>punkty edytorskie - pt</li>
+                    <li>wysokość litery "x" - ex</li>
+                    <li>wysokość aktualnej czcionki - em</li>
+                    <li>centymetry lub milimetry - cm, mm</li>
+                    <li>części dziesiętne centymetra pisane z kropką np.: 0.5cm</li>
+                    <li>cale - in (1in=2.54cm)</li>
+                    <li>"normal" - przywraca wartość domyślną</li>
+                </ul>
+            </li>
+            <h1><li>
+                Odstęp między literami</h1>
+                <p>Składnia reguły:</p>
+                <table style="border:2px solid black;"><td>selektor {letter-spacing: odstęp;}</td></table>
+                <p>Wyraz selektor ma zastosowanie do wszystkich elementów. <br>
+                    Odstęp: należy podać konkretną wielkość, używając jednostek miary:</p>
+                <ul>
+                    <li>piksele - px</li>
+                    <li>punkty edytorskie - pt</li>
+                    <li>wysokość litery "x" - ex</li>
+                    <li>wysokość aktualnej czcionki - em</li>
+                    <li>centymetry lub milimetry - cm, mm</li>
+                    <li>części dziesiętne centymetra pisane z kropką np.: 0.5cm</li>
+                    <li>cale - in (1in=2.54cm)</li>
+                    <li>"normal" - przywraca wartość domyślną</li>
+                </ul>
+            </li>
+            <h1><li>
+                Łączenie właściwości czcionek i tekstu</h1>
+                <p>Składnia reguły:</p>
+                <table style="border:2px solid black;"><td>selektor {font: wartości atrybutów;}</td></table>
+                <p>Wyraz selektor ma zastosowanie do wszystkich elementów.
+                    Jako wartości atrybutów wpisać należy zgodnie z podaną poniżej kolejnością, oddzielając
+                    spacjami, konkretne wartości, które opisują poszczególne atrybuty czcionek i tekstu.
+                    Można niektóre pominąć.</p>
+                <p>Prawidłowa kolejność wartości atrybutów:</p>
+                <ol>
+                    <li>font-style</li>
+                    <li>font-variant</li>
+                    <li>font-weight</li>
+                    <li>font-size (po tym ukośnik „/”; bezpośrednio przed „line-height”)</li>
+                    <li>line-height</li>
+                    <li>font-family</li>
+                </ol>
+                <p>Przykład:</p>
+                <table style="border:2px solid black;"><td>p {font: italic small-caps bold 14px /1cm Arial, Helvetica, Verdana, sans-serif;}</td></table>
+            </li>
+        </ol>
+    </body>
+</html>
