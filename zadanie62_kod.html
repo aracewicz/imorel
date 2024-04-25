@@ -1,0 +1,56 @@
+<html>
+<head>
+<title> kod </title>
+</head>
+<body>
+<textarea cols=50 rows=10>
+<html>
+    <head>
+        <style>
+            @import url(zadanie62_racewicz.css);
+        </style>
+    </head>
+    <body>
+        <p>
+            Uwaga1:<br>
+            Język CSS dopuszcza stosowanie zarówno dużych, jak i małych liter.
+            Poprawnymi nazwami atrybutu są background, backGROUND oraz BACKground.
+            Uwaga2:<br>
+            Wstawienie białych znaków (spacje, tabulacje, znaki nowej linii) w arkuszu CSS nie ma
+            wpływu na jego działanie.
+        </p>
+        <p lang="pl">
+            CSS - Kaskadowe Arkusze Stylów (z ang. Cascading Style Sheets) jest to specjalny język
+            stworzony w celu elastycznego zarządzania sposobem formatowania (wyglądem) elementów
+            znajdujących się na stronach WWW.
+        </p>
+        <p lang="en">
+            CSS - Cascading Style Sheets is a special language
+            created for flexible management of the formatting (appearance) of elements
+            located on websites.
+        </p>
+    </body>
+</html>
+</textarea>
+<textarea cols=50 rows=10>
+p{
+    color: rgb(255, 0, 0);
+    font-size: 7mm  ;
+}
+
+p:lang(pl){
+    color: rgb(223, 201, 62);
+    font-size: 8mm;
+}
+
+p:lang(en){
+    color: rgb(255, 220, 0);
+    font-size:12mm;
+}
+
+body{
+    background-color: rgb(192, 192, 192);
+}
+</textarea>
+</body>
+</html>
