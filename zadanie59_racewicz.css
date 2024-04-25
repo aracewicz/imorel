@@ -1,0 +1,27 @@
+A {
+    font-size: 18pt;
+    text-decoration: none;
+}
+
+A:link {
+    color: blue;
+}
+
+A:visited {
+    color: green;
+}
+
+A:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+*{
+    text-align: center;
+}
+
+/*
+text-decoration: none; -> brak dekoracji tekstu
+text-decoration: underline; -> podkreślenie tekstu
+Amelia Racewicz
+*/
