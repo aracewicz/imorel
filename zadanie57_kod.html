@@ -1,0 +1,67 @@
+<html>
+<head>
+<title> kod </title>
+</head>
+<body>
+<textarea cols=50 rows=10>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url(zadanie57_racewicz.css);
+        </style>
+    </head>
+    <body>
+        <p>
+            <u>Akapit 1</u> Racewicz klasa 1P grupa 1
+            Użyłam * gwiazdka dla selektora uniwersalnego,
+            Parametry dla selektora uniwersalnego:
+            wielkość 30+liczba_liter_imienia w [pt] = 30+6 (Amelia)=36 [pt] ,
+            mam numer w dzienniku 21 a więc nieparzysty, czyli kolor tła srebrny i kolor liter czerwony.
+        </p>
+        <p class="klasa_nieuniwersalna_racewicz">
+            <u>Akapit 2</u>, Racewicz klasa 1P grupa 1
+            Użyłam p. klasa_nieuniwersalna_racewicz,
+            Parametry dla klasy nieuniwersalnej:
+            wielkość 25+liczba_liter_nazwiska w [pt] = 25+8 (Racewicz) = 33 [pt] ,
+            kolor liter zielony (dla numerów nieparzystych w dzienniku).
+        </p>
+        <h1 class="klasa_uniwersalna_racewicz">
+            <u>Akapit 3</u>, Racewicz klasa 1P grupa 1
+            Użyłam p. klasa_uniwersalna_racewicz,
+            Parametry dla klasy uniwersalnej:
+            wielkość 20 + miesiąc urodzenia w [pt] = 20+11 (listopad) = 31 [pt] ,
+            kolor liter zielony (dla numerów nieparzystych w dzienniku).
+        </h1>
+        <div class="klasa_uniwersalna_racewicz">
+            <u>Akapit 4</u>, Racewicz klasa 1P grupa 1
+            Użyłam p. klasa_uniwersalna_racewicz,
+            Parametry dla klasy uniwersalnej:
+            wielkość 20 + miesiąc urodzenia w [pt] = 20+11 (listopad) = 31 [pt] ,
+            kolor liter zielony (dla numerów nieparzystych w dzienniku).
+        </div>
+    </body>
+</html>
+</textarea>
+<textarea cols=50 rows=10>
+*
+{
+    font-size: 36pt;
+    color:red;
+    background-color: silver;
+}
+
+p.klasa_nieuniwersalna_racewicz
+{
+    font-size: 33pt;
+    color: green;
+}
+
+.klasa_uniwersalna_racewicz
+{
+    font-size: 31pt;
+    color: green;
+}
+</textarea>
+</body>
+</html>
