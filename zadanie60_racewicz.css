@@ -1,0 +1,25 @@
+div{
+    width:621px;
+    background-color: green;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: auto;
+    margin-top: 5%;
+    font-size: 10mm;
+}
+#blok1_racewicz:hover{
+    background-color:blue;
+    font-size: 20mm;
+}
+#blok2_racewicz:hover{
+    background-color:silver;
+    font-size: 20mm;
+}
+#blok3_racewicz:hover{
+    background-color:#ABF696;
+    font-size: 20mm;
+}
+div#tekst{
+    text-align: center;
+    width: 95%;
+    background-color: #ffffff;
+}
