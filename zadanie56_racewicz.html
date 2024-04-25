@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            border: 3px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <h1>
+            <li>
+                Składnia teoretyczna definiowania klasy
+        </h1>
+        <table>
+            <tr>
+                <td>selektor.klasa { cecha: wartość }</td>
+            </tr>
+        </table>
+        </li>
+        <h1>
+            <li>
+                Podaj opis dla Klasa "cecha" oraz "wartość"
+        </h1>
+        "Cecha" oraz "wartość" określają atrybuty elementu nadane poprzez style.
+        </li>
+        <h1>
+            <li>Jaki znacznik może być selektorem?
+        </h1>
+        Selektorem może być dowolny znacznik, np.
+        <ul type="disc">
+            <li>p → akapit</li>
+            <li>h1 → tytuł</li>
+            <li>td → komórka tabeli</li>
+        </ul>
+        </li>
+        <h1>
+            <li>Podaj uwagi na temat nazwy klas
+        </h1>
+        Nazwą może być dowolny pojedynczy wyraz, nie może on zawierać:
+        <ol type="a">
+            <li>znaków: kropki, przecinka, dwukropka, pytajnika, nawiasów, znaku równości,
+                plusa, itp.
+            </li>
+            <li>
+                spacji
+            </li>
+        </ol>
+        Może zawierać:
+        <ol type="a">
+            <li>
+                litery (A-Z, a-z), cyfry (0-9)
+            </li>
+            <li>
+                myślniki ("-") i podkreślniki ("_")
+            </li>
+        </ol>
+        Nazwa nie może zaczynać się od cyfry ani myślnika
+        Gdy chcemy użyć znaków "zakazanych" znaków, należy w deklaracji klasy
+        poprzedzić je odwróconym ukośnikiem "\"
+        </li>
+        <h1>
+            <li>Jakie jest zastosowanie klas?
+        </h1>
+        Deklaracja klasy jest przydatna szczególnie, jeśli na wielu stronach serwisu znajdują się
+        elementy mające takie samo formatowanie, a dodatkowo nie można dla nich posłużyć się
+        selektorem typu
+        </li>
+        <h1>
+            <li>Kiedy ma zastosowanie lista klas?
+        </h1>
+        Jeśli chcemy do pojedynczego elementu przypisać kilka różnych klas, należy użyć listy klas
+        </li>
+        <h1>
+            <li>Składnia teoretyczna listy klasy
+        </h1>
+        <table>
+            <tr>
+                <td>&lt;selektor class="klasa1 klasa2 klasa3...">...&lt;/selektor></td>
+            </tr>
+        </table>
+        </li>
+        <h1>
+            <li>Czym są podzbiory klas?
+        </h1>
+        Istnieje możliwość określenia tzw. podzbioru klas, czyli podania, jakie klasy musi mieć
+        jednocześnie przypisane element, aby wybrana reguła CSS miała do niego zastosowanie
+        </li>
+        <h1>
+            <li>Co jest sygnałem (przesłanką), że należy zastosować klasy?
+        </h1>
+        Jeśli jakiś element, o specyficznym rodzaju formatowania, wstępuje przynajmniej raz
+        na niektórych stronach Twojego serwisu (może to być np. główny tytuł strony), jest to
+        znak, że dobrze byłoby umieścić w zewnętrznym arkuszu stylów deklarację jego
+        klasy. Dzięki temu, jeśli później zdecydujemy się zmienić jego formatowanie, nie
+        będziemy musieli modyfikować każdej ze stron, a jedynie zewnętrzny arkusz.
+        </li>
+        <h1>
+            <li>Kiedy i z jakiego powodu powinny być planowane klasy dla wykonywanej strony?
+        </h1>
+        Już na początkowym etapie projektowania serwisu, dobrze jest dokładnie obmyślić,
+        jakie klasy mogą okazać się użyteczne. Im więcej deklaracji klas - odnoszących się do
+        powtarzalnych elementów - umieścisz w zewnętrznym arkuszu stylów, tym szybciej
+        przebiegnie późniejsza ewentualna modyfikacja stron!
+        </li>
+        <h1>
+            <li>Jaki jest cel stosowania komentarzy podczas definiowania klas?
+        </h1>
+        Dobrym pomysłem jest również wstawianie komentarza przed każdą deklaracją klasy
+        w arkuszu (znaki: /* ... */), w którym opisuje się jej przeznaczenie. Po jakimś czasie w
+        Twoim arkuszu stylów może znaleźć się tyle klas, że zapomnisz, do jakich elementów
+        się one odnosiły. Wtedy właśnie bardzo przydatny może się okazać wpisany wcześniej
+        komentarz.
+        </li>
+        <h1>
+            <li>Podaj konkretny przykład definiowania klasy oraz jej użycia (wywołanie).
+        </h1>
+        <p>Definicja:</p>
+        <table>
+            <tr>
+                <td>
+                    p.przyklad_klasa { color: red }
+                </td>
+            </tr>
+        </table>
+        <p>Wywołanie:</p>
+        <table>
+            <tr>
+                <td>
+                    &lt;p class="przyklad_klasa">To jest akapit.&lt;/p>
+                </td>
+            </tr>
+        </table>
+        </li>
+        <h1>
+            <li>Omów klasa donosząca się tylko do jednego selektora wraz z przykładem.
+        </h1>
+        Podobnie jak w przypadku identyfikatora, tak zdefiniowana klasa może zostać użyta tylko w
+        tym selektorze, do którego została przypisana, np.
+        <p>Definicja:</p>
+        <table>
+            <tr>
+                <td>
+                    p.moja<br>
+                    {<br>
+                    color:green;<br>
+                    font-size:14pt;<br>
+                    }<br>
+                </td>
+            </tr>
+        </table>
+        <p>Wywołanie:<br>
+            Powinna zostać wywołana w znaczniku &lt;p>&lt;/p> w następujący sposób:
+        </p>
+        <table>
+            <tr>
+                <td>
+                    &lt;p class=”moja”>Treść akapitu&lt;/p>
+                </td>
+            </tr>
+        </table>
+        </li>
+        <h1>
+            <li>Jaki jest cel stosowania klasy uniwersalnej. Jakie jest znaczenie znaku „*” oraz kiedy
+                można nie stosować tego znaku. Podaj przykład (definicja, wywołanie).
+        </h1>
+        <p>W przypadku stosowanie klas, często podczas ich definiowania, nie wiemy jeszcze, w
+            stosunku do jakich znaczników będziemy chcieli je później użyć. Wtedy przydatny okazuje
+            się selektor uniwersalny, który pozwala przypisać własności klasy do wszystkich elementów,
+            którym zostanie ona nadana, bez względu na typ znacznika czyli użycie jest możliwe w
+            różnych znacznikach.
+        </p>
+        <h4>Przykład:</h4>
+        <table>
+            <tr>
+                <td>
+                    *.przyklad_uniwersalna { color: red }
+                </td>
+            </tr>
+        </table>
+        <p>Każdy element, któremu nadamy klasę przyklad_uniwersalna, będzie miał kolor czerwony.
+            W tym przypadku gwiazdkę (*) w regule stylu można pominąć:</p>
+        <table>
+            <tr>
+                <td>
+                    .przyklad_uniwersalna { font-size:12 pt; color: red }
+                </td>
+            </tr>
+        </table>
+        <p>Każdy element, któremu nadamy klasę przyklad_uniwersalna, będzie miał kolor czerwony.
+            W tym przypadku gwiazdkę (*) w regule stylu można pominąć:</p>
+        </li>
+    </ol>
+</body>
+
+</html>

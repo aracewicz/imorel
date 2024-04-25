@@ -1,0 +1,18 @@
+*
+{
+    font-size: 36pt;
+    color:red;
+    background-color: silver;
+}
+
+p.klasa_nieuniwersalna_racewicz
+{
+    font-size: 33pt;
+    color: green;
+}
+
+.klasa_uniwersalna_racewicz
+{
+    font-size: 31pt;
+    color: green;
+}
