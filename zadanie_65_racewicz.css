@@ -1,0 +1,44 @@
+p{
+    font-size: 11pt;
+}
+p:first-child{
+    font-size: 7mm;
+    font-style: italic;
+}
+body{
+    background-color: rgb(192,192,192);
+}
+div#pierwszy_racewicz{
+    width: 784pt;
+    background-color: rgb(135, 206, 250);
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px;
+    border-color: rgb(0, 0, 139);
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+div#drugi_racewicz{
+    width: 984pt;
+    background-color: rgb(255, 20, 243);
+    border: solid 3px;
+    border-color:rgb(0, 0, 0);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+div#trzeci_racewicz{
+    width: 1184pt;
+    background-color: rgb(127, 255, 0);
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 7px;
+    border-color: rgb(74, 35, 92);
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
