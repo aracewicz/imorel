@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <h1>
+            <li>Co to są pseudoklasy?
+        </h1>
+        CSS przewiduje kilka ściśle określonych klas pozwalających na formatowanie niektórych
+        elementów dokumentu są to Pseudoklasy.
+        </li>
+        <h1>
+            <li>Uwaga dotycząca dwukropka:
+        </h1>
+        Szalenie istotnym elementem w tej konstrukcji jest dwukropek występujący pomiędzy
+        selektorem a nazwą klasy.
+        </li>
+        <h1>
+            <li>Tabela opisującą pseudoklasy:
+        </h1>
+        <table>
+            <tr>
+                <td>A:link</td>
+                <td>Odpowiada za wygląd hiperłącza, jeżeli nie zostało ono jeszcze
+                    odwiedzone.
+                </td>
+            </tr>
+            <tr>
+                <td>A:visited</td>
+                <td>Odpowiada za formatowanie hiperłącza już odwiedzonego.</td>
+            </tr>
+            <tr>
+                <td>A:hover</td>
+                <td>Zmiany pewnych elementów po najechaniu na nie urządzeniem
+                    wskazującym (np. myszą), np. odsyłacz, nad którym zatrzymano kusor
+                    lub element blokowy DIV
+                </td>
+            </tr>
+            <tr>
+                <td>A:active</td>
+                <td>Pozwala nadać dowolne formatowanie elementowi po nakierowaniu na
+                    niego wskaźnika myszy i wciśnięciu przycisku, ale przed jego
+                    zwolnieniem (odsyłacz aktywny→kliknięty)
+                </td>
+            </tr>
+            <tr>
+                <td>A:focus</td>
+                <td>Jeżeli chcemy, by właśnie wyświetlany odsyłacz z menu był
+                    formatowany innym kolorem. Odsyłacz posiadający tzw fokus-
+                    zaznaczony przy poruszaniu się po dokumencie przy pomocy klawisza
+                </td>
+            </tr>
+            <tr>
+                <td>:lang</td>
+                <td>Formatowanie wielojęzykowych dokumentów.</td>
+            </tr>
+            <tr>
+                <td>:first-child</td>
+                <td>Umożliwia określenie formatowania dla pierwszego dziecka wybranego
+                    elementu.
+                </td>
+            </tr>
+        </table>
+        </li>
+        <h1>
+            <li>Zastosowanie pseudoklasy :active
+        </h1>
+        <ol>
+            <li>
+                Można używać jako uzupełnienia definicji odnośników.
+            </li>
+            <li>
+                Można używać jako elementu poprawiającego czytelność formularzy.
+            </li>
+        </ol>
+        </li>
+        <h1>
+            <li>Przykłady kodów definiowania pseudoklas:
+        </h1>
+        <table style="border: 2px solid black; width: 50%;">
+            <tr>
+                <td>
+                    <u>Temat: Arkusz wykorzystujący :link oraz :visited pseudoklasy w połączeniu z selektorem
+                        A. Przykładowa definicja sformatuje odnośnik za pomocą koloru czerwonego i po wybraniu
+                        taki odnośnik będzie miał kolor zielony.</u><br>
+                    A:link<br>
+                    {<br>
+                    color:red;<br>
+                    }<br>
+                    A:visited<br>
+                    {<br>
+                    color:green;<br>
+                    }<br>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table style="border: 2px solid black; width: 50%;">
+            <tr>
+                <td>
+                    <u>Temat: Arkusz wykorzystujący :link oraz :visited pseudoklasy w połączeniu z selektorem
+                        A. Przykładowa definicja sformatuje odnośnik za pomocą koloru czerwonego i po wybraniu
+                        taki odnośnik będzie miał kolor zielony.</u><br>
+                    A /* Definicja odsyłacza podstawowego*/<br>
+                        {<br>
+                        font-size:12pt;<br>
+                        text-decoration:none;<br>
+                        }<br>
+                    A:link<br>
+                        {<br>
+                        color:navy;<br>
+                        }<br>
+                    A:visited<br>
+                        {<br>
+                        color:green;<br>
+                        }<br>
+                    A:hover<br>
+                        {<br>
+                        color:red;<br>
+                        text-decoration:underline;<br>
+                        }<br>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table style="border: 2px solid black; width: 50%;">
+            <tr>
+                <td>
+                    <u>Temat: Zastosowanie :focus</u><br>
+                    A:focus<br>
+                        {<br>
+                        color:brown;<br>
+                        }<br>
+                </td>
+            </tr>
+        </table>
+        </li>
+    </ol>
+</body>
+
+</html>
